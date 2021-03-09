@@ -8,75 +8,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="menu">
+            <nav class="menu-left">
                 <div class="logo">
-                    <img src="img/Logo_Revolut.png" alt="#">
-                    <a href="#">PERSONALE</a>
-                    <a href="#">BUSINESS</a>
+                    <a href="#"><img src="img/Logo_Revolut.png" alt="#"></a>
                 </div>
-                <ul class="voci-menu">
-                    <li class="with-dropdown">
-                        <a href="#">Tariffazione</a>
-                        <a href="#">Accounts</a>
-                            <div class="dropdown-menu-uno">
+                <div class="menu-left-nav">
+                    <ul>
+                        <li><a href="#">PERSONALE</a></li>
+                        <li><a href="#">BUSINESS</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav class="menu-right">
+                <div class="menu-right-nav">
+                    <ul>
+                        <li><a href="#">Tariffazione</a></li>
+                        <li class="dropdown-nav">
+                            <a href="#">Accounts</a>
+                            <div class="dropdown">
                                 <ul>
                                     <li><a href="#">Standard</a></li>
                                     <li><a href="#">Premium</a></li>
                                     <li><a href="#">Metal</a></li>
                                 </ul>
                             </div>
-                        <a href="#">Prodotti</a>
-                        <div class="dropdown-menu-due">
-                            <ul>
-                                <li><a href="#">Trasferimento di denaro</a></li>
-                                <li><a href="#">Salvadanaio</a></li>
-                                <li><a href="#">Gestione Budget</a></li>
-                                <li><a href="#">Perk</a></li>
-                                <li><a href="#">Criptovaluta</a></li>
-                                <li><a href="#">Assicurazione Smartphone</a></li>
-                                <li><a href="#">Assicurazione Medica Internazionale</a></li>
-                                <li><a href="#">API di open banking</a></li>
-                                <li><a href="#">Apple Pay</a></li>
-                                <li><a href="#">Donazioni</a></li>
-                            </ul>
-                        </div>
-                        <a href="#">Azienda</a>
-                        <div class="dropdown-menu-tre">
-                            <ul>
-                                <li><a href="#">Chi siamo</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Lavora con noi</a></li>
-                                <li><a href="#">Affiliates</a></li>
-                                <li><a href="#">Influencers</a></li>
-                                <li><a href="#">Contatto</a></li>
-                            </ul>
-                        </div>
-                        <a href="#">Aiuto</a>
-                        <div class="dropdown-menu-quattro">
-                            <ul>
-                                <li><a href="#">Community</a></li>
-                                <li><a href="#">Centro assistenza</a></li>
-                                <li><a href="#">Security</a></li>
-                                <li><a href="#">Stato di sistema</a></li>
-                            </ul>
-                        </div>
-                        <a href="#">IT</a>
-                        <div class="dropdown-menu-cinque">
-                            <ul>
-                                <li><a href="#">Italiano</a></li>
-                                <li><a href="#">English</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a class="button" href="#">Scarica l'app</a></li>
-                </ul>
-            </div>
+                        </li>
+                        <li class="dropdown-nav">
+                            <a href="#">Prodotti</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="#">Trasferimento di denaro</a></li>
+                                    <li><a href="#">Salvadanaio</a></li>
+                                    <li><a href="#">Gestione Budget</a></li>
+                                    <li><a class="beta" href="#">Perk</a></li>
+                                    <li><a href="#">Criptovaluta</a></li>
+                                    <li><a href="#">Assicurazione Smartphone</a></li>
+                                    <li><a href="#">Assicurazione Medica Internazionale</a></li>
+                                    <li><a href="#">API di open banking</a></li>
+                                    <li><a class="new" href="#">Apple Pay</a></li>
+                                    <li><a class="new" href="#">Donazioni</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown-nav">
+                            <a href="#">Azienda</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="#">Chi siamo</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Lavora con noi</a></li>
+                                    <li><a class="new" href="#">Affiliates</a></li>
+                                    <li><a href="#">Influencers</a></li>
+                                    <li><a href="#">Contatto</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown-nav">
+                            <a href="#">Aiuto</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Centro assistenza</a></li>
+                                    <li><a href="#">Security</a></li>
+                                    <li><a href="#">Stato di sistema</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown-nav">
+                            <a class="arrow" href="#">IT<i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="#">Italiano</a></li>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Espanol</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button>Scarica l'App</button>
+            </nav>
         </div>
     </header>
-    <link rel="stylesheet" href="js/script.js">
+
+    <script src="js/script.js"></script>
 </body>
 </html>

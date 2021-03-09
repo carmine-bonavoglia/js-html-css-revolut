@@ -3,17 +3,35 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 18px;
 }
 
 .container{
-    width: 100%;
+    width: 80%;
+    height: 100px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.menu{
-    display: flex;
-    justify-content: space-around;
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+    margin-right: 30px;
+    line-height: 2.2;
+}
+
+a:hover{
+    color: black;
+    transition: .5s ease;
 }
 
 .logo img{
@@ -21,78 +39,82 @@
     vertical-align: middle;
 }
 
-.logo a{
-    display: inline-block;
-    text-decoration: none;
-    vertical-align: middle;
-    padding: 20px;
-    color: black;
-}
-
-.menu{
-    width: 100%;
-    height: 70px;
-    background-color: lime;
-}
-
-.menu ul li{
-    display: inline-block;
-    padding: 20px 0px;
-    vertical-align: middle;
-}
-
-.menu ul li a{
-    text-decoration: none;
-    color: black;
-    margin: 0 20px;
-}
-
-li a.button{
+button{
+    display: inline;
     background-color: #eb008d;
     color: white;
-    padding: 10px 15px;
-    border-radius: 25px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: none;
+    margin: 20px 0;
 }
 
-.dropdown-menu-uno,
-.dropdown-menu-due,
-.dropdown-menu-tre,
-.dropdown-menu-quattro,
-.dropdown-menu-cinque{
-    box-shadow: 0px 0px 5px lightgray;
-    margin-top: 10px;
+button:hover{
+    background-color: #2385c7;
+    transition: .5s linear;
+}
+
+/* MENU LEFT */
+.menu-left{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* MENU RIGHT */
+.menu-right{
+    display: flex;
+    align-items: center;
+}
+
+/* DROPDOWN */
+.dropdown-nav{
+    position: relative;
+}
+
+.dropdown{
+    min-width: 150px;
+    display: none;
     position: absolute;
+    top:45px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    box-shadow: 0 0 4px #2385c7;
 }
 
-.dropdown-menu-uno ul li,
-.dropdown-menu-due ul li,
-.dropdown-menu-tre ul li,
-.dropdown-menu-quattro ul li,
-.dropdown-menu-cinque ul li{
+/* After */
+ul li a.new,
+ul li a.beta {
+    position: relative;
+}
+
+ul li a.new::after{
+    content: "Nuovo";
+    font-size: 0.8em;
+    position: absolute;
+    top: -18px;
+    font-weight: bold;
+        color: #eb008d;
+}
+
+ul li a.beta::after{
+    content: "Beta";
+    font-size: 0.8em;
+    position: absolute;
+    top: -18px;
+    font-weight: bold;
+    color: #eb008d;
+}
+
+/* jQuery */
+.active{
     display: block;
-    padding: 5px 20px;
-    text-align: left;
 }
 
-.dropdown-menu-uno{
-    left: 54%;
-    transform: translateX(-50%);
-}
-
-.dropdown-menu-due{
-    left: 62%;
-    transform: translateX(-50%);
-}
-
-.dropdown-menu-tre{
-    left: 70%;
-    transform: translateX(-50%);
-}
-.dropdown-menu-quattro{
-    left: 77%;
-    transform: translateX(-50%);
-}
-.dropdown-menu-cinque{
-    left: 81%;
-    transform: translateX(-50%);
+.fa-chevron-up,
+.fa-chevron-down{
+    margin-left: 5px;
+    font-size: 12px;
 }
